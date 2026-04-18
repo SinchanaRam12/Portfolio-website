@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+   
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+    <a href="#home" style="--i:1" class="active">Home</a>
+    <a href="#education" style="--i:2">Education</a>
+    <a href="#skills" style="--i:3">Skills</a>
+    <a href="#interests" style="--i:4">Interests</a>
+    <a href="#projects" style="--i:5">Projects</a>
+    <a href="#certificates" style="--i:6">Certificates</a>
+    <a href="#contact" style="--i:7">Contact</a>
+</nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-img">
+    <img src="profile.jpeg" alt="Profile Photo">
+</div>
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1 class="name">Sinchana R</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>I am an MCA student with a strong interest in software development and web technologies.<br> I possess hands-on knowledge of HTML, CSS, JavaScript, AngularJS, C, and Python.<br> I completed my internship at QSpiders, where I worked on real-time projects and enhanced my development skills.</p>
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/sinchana-r-b2b61038a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedIn
+    <i class='bx bxl-linkedin'></i>
+</a>
+<a href="https://github.com/SinchanaRam12" target="_blank">github
+
+    <i class='bx bxl-github'></i>
+</a>
+                <a href="#facebook" style=" --i:6"><i class='bx bxl-facebook'></i></a>
+                <a href="#instagram" style=" --i:7"><i class='bx bxl-instagram'></i></a>
+                <a href="#whatsapp" style=" --i:8"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+        </div>
+        <a href="Final_Canva_Resume_Sinchana_R.pdf" target="_blank" class="btn-box">Resume</a>
+        <span class="home-imgHover"></span>
+        </section>
+    <section class="education" id="education">
+    <div class="education-text">
+        <h2 class="sub-title">My <span>Education</span></h2>
+
+        <div class="education-container">
+
+            <div class="edu-card">
+                <h4>MCA</h4>
+                <p>Master of Computer Applications with focus on development and programming.</p>
+                <span>2025- Present</span>
+            </div>
+
+            <div class="edu-card">
+                <h4>BSc</h4>
+                <p>Strong foundation in programming, databases and web technologies.</p>
+                <span>2022 - 2025</span>
+            </div>
+
+            <div class="edu-card">
+                <h4>PUC</h4>
+                <p>Completed higher secondary with analytical and academic focus.</p>
+                <span>2019 - 2021</span>
+            </div>
+
+            <div class="edu-card">
+                <h4>SSLC</h4>
+                <p>Completed schooling with strong basics and interest in tech.</p>
+                <span>2019</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <section id="skills">
+    <h2 class="sub-title">My <span>Skills</span></h2>
+
+    <div class="container1">
+        <h1 class="heading1">Technical Skills</h1>
+
+        <div class="Technical-bars">
+
+        <div class="bar">
+    <div class="info">
+        <span>HTML, CSS, JavaScript</span>
+        <span class="percent">90%</span>
+    </div>
+    <div class="progress">
+        <span data-width="90%"></span>
+    </div>
+</div>
+
+<div class="bar">
+    <div class="info">
+        <span>Python</span>
+        <span class="percent">85%</span>
+    </div>
+    <div class="progress">
+        <span data-width="85%"></span>
+    </div>
+</div>
+
+<div class="bar">
+    <div class="info">
+        <span>Java</span>
+        <span class="percent">80%</span>
+    </div>
+    <div class="progress">
+        <span data-width="80%"></span>
+    </div>
+    </div>
+
+    <div class="bar">
+    <div class="info">
+        <span>React JS</span>
+        <span class="percent">70%</span>
+    </div>
+    <div class="progress">
+        <span data-width="70%"></span>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+</section>
+
+<section id="interests">
+    <h2 class="sub-title">My <span>Interests</span></h2>
+
+    <div class="interest-container">
+
+        <div class="interest-card" onclick="openInterest('int1')">
+            <img src="web-design.png">
+            <h3>Web Development</h3>
+        </div>
+
+        <div class="interest-card" onclick="openInterest('int2')">
+            <img src="ai.png">
+            <h3>Artificial Intelligence</h3>
+        </div>
+
+        <div class="interest-card" onclick="openInterest('int3')">
+            <img src="data_analytics.png">
+            <h3>Data Analytics</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- INTEREST POPUPS -->
+
+<div id="int1" class="popup">
+    <div class="popup-box">
+        <span class="close" onclick="closeInterest('int1')">&times;</span>
+        <h2>Web Development</h2>
+        <p>I enjoy building modern and responsive websites using HTML, CSS, and JavaScript. I focus on creating user-friendly and visually appealing interfaces.</p>
+    </div>
+</div>
+
+<div id="int2" class="popup">
+    <div class="popup-box">
+        <span class="close" onclick="closeInterest('int2')">&times;</span>
+        <h2>Artificial Intelligence</h2>
+        <p>I am interested in AI technologies and how machines can learn and make decisions. I explore machine learning concepts and real-world applications.</p>
+    </div>
+</div>
+
+<div id="int3" class="popup">
+    <div class="popup-box">
+        <span class="close" onclick="closeInterest('int3')">&times;</span>
+        <h2>Data Analytics</h2>
+        <p>I like analyzing data to extract meaningful insights and visualize trends using tools and programming.</p>
+    </div>
+</div>
+
+<div id="int4" class="popup">
+    <div class="popup-box">
+        <span class="close" onclick="closeInterest('int4')">&times;</span>
+        <h2>UI/UX Design</h2>
+        <p>I am passionate about designing clean and interactive user interfaces that enhance user experience.</p>
+    </div>
+</div>
+
+<section id="projects">
+    <h2 class="sub-title">My <span>Projects</span></h2>
+
+    <div class="project-container">
+
+        <!-- Project 1 -->
+        <div class="project-circle" onclick="openPopup('project1')">
+            <img src="Attendance System.jpeg" alt="">
+            <div class="overlay">
+                <h3>Smart Attendance System</h3>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-circle" onclick="openPopup('project2')">
+            <img src="images_crop.jpeg" alt="">
+            <div class="overlay">
+                <h3>Crop Disease Prediction</h3>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-circle" onclick="openPopup('project3')">
+            <img src="block.webp" alt="">
+            <div class="overlay">
+                <h3>Blockchain Voting System</h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- POPUPS -->
+
+
+<!-- PROJECT 1 -->
+<div id="project1" class="popup">
+    <div class="popup-box">
+        <span class="close" onclick="closePopup('project1')">&times;</span>
+
+        <img src="VF100-X-Front-Face-IT.png" class="popup-img">
+
+        <h2>Smart Attendance System</h2>
+        <p>This project uses face recognition to mark attendance automatically and avoids proxy attendance.</p>
+    </div>
+</div>
+
+<!-- PROJECT 2 -->
+<div id="project2" class="popup">
+    <div class="popup-box">
+        <span class="close" onclick="closePopup('project2')">&times;</span>
+
+        <img src="AI-Crop-Disease-Management.webp" class="popup-img">
+
+        <h2>Crop Disease Prediction</h2>
+        <p>This system detects crop diseases using machine learning and helps farmers take action early.</p>
+    </div>
+</div>
+
+<!-- PROJECT 3 -->
+<div id="project3" class="popup">
+    <div class="popup-box">
+        <span class="close" onclick="closePopup('project3')">&times;</span>
+
+        <img src="block.webp" class="popup-img">
+
+        <h2>Blockchain Voting System</h2>
+        <p>This project provides secure and transparent voting using blockchain technology.</p>
+    </div>
+</div>
+
+<section id="certificates">
+    <h2 class="sub-title">My <span>Certificates</span></h2>
+
+    <div class="certificate-container">
+
+        <div class="certificate-card">
+            <img src="digital.jpeg" alt="Certificate 1" onclick="openCert(this.src)">
+            <h3>Digital Productivity with AI Certificate</h3>
+        </div>
+        
+
+        <div class="certificate-card">
+            <img src="qspiders.jpeg" onclick="openCert(this.src)">
+            <h3>Qspiders Certificate</h3>
+        </div>
+        
+
+        <div class="certificate-card">
+            <img src="customer.jpeg" onclick="openCert(this.src)">
+            <h3>IBM: Communication and personality dynamics Certificate</h3>
+        </div>
+        
+
+    </div>
+</section>
+
+
+
+<div id="certPopup" class="cert-popup">
+    <span class="close" onclick="closeCert()">&times;</span>
+    <img id="certImg" class="cert-popup-img">
+</div>
+
+
+
+<section class="contact" id="contact">
+    <div class="contact-text">
+        <h2 class="sub-title">Contact <span>Me</span></h2>
+        <h4>Let's work Together</h4>
+        <p>I am an MCA student passionate about development and always eager to learn and grow. I am open to internships, projects, and collaborations. Feel free to reach out if you would like to work together or discuss ideas.”</p>
+        <div class="contact-list">
+            <li><i class='bx bxs-send'></i>rsinchana73@gmail.com</li>
+            <li><i class='bx bxs-phone'></i>8147437284</li>
+        </div>
+        <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/sinchana-r-b2b61038a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedIn
+    <i class='bx bxl-linkedin'></i>
+</a>
+<a href="https://github.com/SinchanaRam12" target="_blank">github
+
+    <i class='bx bxl-github'></i>
+</a>
+            <a href=""><i class='bx bxl-facebook-circle'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <form action="">
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <input type="" placeholder="Enter Your Subject">
+            <textarea name="text" id="" cols="40" rows="10" placeholder="Enter Your Address"></textarea>
+            <input type="submit" value="submit" class="send">
+        </form>
+    </div>
+</section> 
+<div class="last-text">
+    <p>Developed with love by Sinchana R © 2026</p>
+</div>
+<a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>       
+
+        
+
+        
+
+                    
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>
